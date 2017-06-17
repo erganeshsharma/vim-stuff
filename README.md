@@ -12,15 +12,16 @@ This tutor is designed to describe enough of the commands that you will be able 
     `h` (left)    `j` (down)    `k` (up)      `l` (right)
 ##### Text Editing - Insertion and Appending
 - To insert or append test type:
-    * `i`   type inserted text	`<ESC>`	insert before the cursor.
-    * `A`   type appended text	`<ESC>`	append after the line.
+    * `i`   type inserted text  `<ESC>` insert before the cursor.
+    * `A`   type appended text  `<ESC>` append after the line.
 ##### Text Editing - Deletion
 - To delete the character at the cursor type:  `x`
 ##### Exiting Vim
 - To exit Vim type:
-    * `<ESC>	:wq	<ENTER>` to save the changes and quit.
-    * `<ESC>	:q!	<ENTER>` to trash all changes and quit.
->**NOTE:** Pressing `<ESC>` will place you in Normal mode or will cancel an unwanted and partially completed command.
+    * `<ESC>    :wq <ENTER>` to save the changes and quit.
+    * `<ESC>    :q! <ENTER>` to trash all changes and quit.
+
+>**Note :** Pressing `<ESC>` will place you in Normal mode or will cancel an unwanted and partially completed command.
 
 ---
 
@@ -33,9 +34,9 @@ This tutor is designed to describe enough of the commands that you will be able 
 - The format for a change command is:
     `operator [number] motion`
     where:
-	    `operator` - is what to do, such as `d` for delete.
-	    `[number]` - is an optional count to repeat the motion.
-	    `motion`   - moves over the text to operate on, such as `w` (words), `$` (to the end of line), etc.
+        `operator` - is what to do, such as `d` for delete.
+        `[number]` - is an optional count to repeat the motion.
+        `motion`   - moves over the text to operate on, such as `w` (words), `$` (to the end of line), etc.
 - To move to the start of the line use a zero: `0`
 ##### The Undo Command
 - To undo previous actions, type: `u` (lowercase u)
@@ -51,7 +52,7 @@ This tutor is designed to describe enough of the commands that you will be able 
 ##### The Change Operator
 - The change operator allows you to change from the cursor to where the motion takes you. eg. Type `ce` to change from the cursor to the end of the word,  `c$` to change to the end of a line.
 - The format for change is:
-	    `c [number] motion`
+        `c [number] motion`
 
 ---
 
@@ -119,7 +120,11 @@ You can either use the long or the short option name.
 - Type `CTRL-W CTRL-W` to jump to another window.
 - Type `:q` to close the help window.
 ##### Create a Startup Script
-- Create a **vimrc** startup script to keep your preferred settings.
+- Create a **vimrc** startup script to keep your preferred settings :
+    * Start editing the "vimrc" file : `:e ~/.vimrc`
+    * Now read the example "vimrc" file contents : `:r $VIMRUNTIME/vimrc_example.vim`
+    * Write the file with : `:w`
+> **Note :** The next time you start Vim it will use syntax highlighting. You can add all your preferred settings to this "vimrc" file. For more information type `:help vimrc-intro`. 
 ##### Completion
 - When typing a  `:` command :
     * press `CTRL-D` to see possible completions.
@@ -135,7 +140,6 @@ You can either use the long or the short option name.
 This tutorial was written by Michael C. Pierce and Robert K. Ware,
 Colorado School of Mines using ideas supplied by Charles Smith,
 Colorado State University. E-mail: bware@mines.colorado.edu.
-
 Modified for Vim by Bram Moolenaar.
 
 ---
