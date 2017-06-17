@@ -2,7 +2,9 @@
 
 Vim is a very powerful editor that has many commands, too many to explain in a tutor such as this.
 This tutor is designed to describe enough of the commands that you will be able to easily use Vim as an all-purpose editor.
+
 ---
+
 ##### Starting Vim
 - To start Vim from the shell prompt type:  `$ vim FILENAME <ENTER>`
 ##### Moving Cursor
@@ -19,7 +21,9 @@ This tutor is designed to describe enough of the commands that you will be able 
     * `<ESC>	:wq	<ENTER>` to save the changes and quit.
     * `<ESC>	:q!	<ENTER>` to trash all changes and quit.
 >**NOTE:** Pressing `<ESC>` will place you in Normal mode or will cancel an unwanted and partially completed command.
+
 ---
+
 ##### Deletion Commands
 - To delete from the cursor up to the next word type: `dw`
 - To delete from the cursor to the end of a line type: `d$`
@@ -37,7 +41,9 @@ This tutor is designed to describe enough of the commands that you will be able 
 - To undo previous actions, type: `u` (lowercase u)
 - To undo all the changes on a line, type: `U` (uppercase U)
 - To undo the undo's(redo), type: `CTRL-R`
+
 ---
+
 ##### The Put Command
 - To put back text that has just been deleted, type `p`. This puts the deleted text AFTER the cursor (if a line was deleted it will go on the line below the cursor).
 ##### The Replace Command
@@ -46,7 +52,9 @@ This tutor is designed to describe enough of the commands that you will be able 
 - The change operator allows you to change from the cursor to where the motion takes you. eg. Type `ce` to change from the cursor to the end of the word,  `c$` to change to the end of a line.
 - The format for change is:
 	    `c [number] motion`
+
 ---
+
 ##### Cursor Location and File Status
 - `CTRL-G` displays your location in the file and the file status.
 - `G` moves to the end of the file.
@@ -65,7 +73,9 @@ This tutor is designed to describe enough of the commands that you will be able 
 - To substitute phrases between two line #'s type `:#,#s/old/new/g`
 - To substitute all occurrences in the file type `:%s/old/new/g`
 - To ask for confirmation each time add 'c' `:%s/old/new/gc`
+
 ---
+
 ##### To Execute an External Command
 - `:!` command executes an external command.
 Some usefule examples are :
@@ -78,7 +88,9 @@ Some usefule examples are :
 ##### Retrieving and Merging Files
 - `:r FILENAME` retrieves disk file `FILENAME` and puts it BELOW the cursor position.
 - `:r !ls` reads the output of the `ls` command and puts it BELOW the cursor position.
+
 ---
+
 ##### The Open Command
 - Type `(lowercase) o` to open a line **BELOW** the cursor and start Insert mode.
 - Type `(uppercase) O` to open a line **ABOVE** the cursor.
@@ -98,7 +110,9 @@ Some options are:
     * `'hls' 'hlsearch'` highlight all matching phrases.
 You can either use the long or the short option name.
 - Prepend `"no"` to switch an option off : `:set noic`, `:set nohlsearch`, etc
+
 ---
+
 ##### Getting Help
 - Type `:help`  or  press `<F1>` or `<Help>` to open a help window.
 - Type `:help cmd` to find help on cmd.
@@ -110,7 +124,9 @@ You can either use the long or the short option name.
 - When typing a  `:` command :
     * press `CTRL-D` to see possible completions.
     * Press `<TAB>` to use one completion.
+
 ---
+
 ##### Further Reading
 - For Further Reading and Studing, this book is recommended: `Vim - Vi Improved - by Steve Oualline`.
 - To try these tutorials interactively, use : `$vimtutor` command on a shell terminal.
@@ -119,5 +135,7 @@ You can either use the long or the short option name.
 This tutorial was written by Michael C. Pierce and Robert K. Ware,
 Colorado School of Mines using ideas supplied by Charles Smith,
 Colorado State University. E-mail: bware@mines.colorado.edu.
+
 Modified for Vim by Bram Moolenaar.
+
 ---
